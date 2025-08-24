@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply theme backgrounds */
+html, body {
+  @apply min-h-screen transition-colors duration-300;
+}
+
+/* Light theme: soft gradient */
+body {
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  color: #1f2937; /* gray-800 text */
+}
+
+/* Dark theme: elegant dark */
+.dark body {
+  background: linear-gradient(to bottom right, #111827, #1f2937);
+  color: #f3f4f6; /* gray-100 text */
+}
